@@ -1,0 +1,9 @@
+{
+  "dependsOn": {
+    "ghcr.io/rocker-org/devcontainer-features/miniforge": {}
+  },
+  "description": "Update Conda and initialize shell",
+  "id": "update-conda",
+  "name": "Update Conda",
+  "version": "0.0.7"
+}
