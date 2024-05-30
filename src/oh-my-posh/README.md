@@ -7,7 +7,7 @@ A prompt theme engine for any shell.
 
 ```json
 "features": {
-    "ghcr.io/robinmordasiewicz/features/oh-my-posh:0": {}
+    "ghcr.io/amerintlxperts2024/devcontainer-features/oh-my-posh:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ A prompt theme engine for any shell.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/robinmordasiewicz/features/blob/main/src/oh-my-posh/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts2024/devcontainer-features/blob/main/src/oh-my-posh/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
