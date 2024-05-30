@@ -7,7 +7,7 @@ Infrastructure Cost
 
 ```json
 "features": {
-    "ghcr.io/robinmordasiewicz/features/infracost:0": {}
+    "ghcr.io/amerintlxperts2024/devcontainer-features/infracost:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Infrastructure Cost
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/robinmordasiewicz/features/blob/main/src/infracost/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts2024/devcontainer-features/blob/main/src/infracost/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -7,7 +7,7 @@ opencommit using ollama
 
 ```json
 "features": {
-    "ghcr.io/robinmordasiewicz/features/opencommit:0": {}
+    "ghcr.io/amerintlxperts2024/devcontainer-features/opencommit:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ opencommit using ollama
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/robinmordasiewicz/features/blob/main/src/opencommit/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts2024/devcontainer-features/blob/main/src/opencommit/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
