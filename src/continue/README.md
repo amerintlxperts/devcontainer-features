@@ -7,7 +7,7 @@ Install Continue Extension
 
 ```json
 "features": {
-    "ghcr.io/amerintlxperts2024/devcontainer-features/continue:0": {}
+    "ghcr.io/amerintlxperts/devcontainer-features/continue:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Install Continue Extension
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts2024/devcontainer-features/blob/main/src/continue/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/continue/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
