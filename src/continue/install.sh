@@ -16,4 +16,4 @@ if [ ! -d "${_REMOTE_USER_HOME}/.continue" ]; then
   su -l "${_REMOTE_USER}" -c "mkdir -p ${_REMOTE_USER_HOME}/.continue"
 fi
 
-su -l "${_REMOTE_USER}" -c "curl -L https://raw.githubusercontent.com/robinmordasiewicz/dotfiles/main/.continue/config.json -o ${_REMOTE_USER_HOME}/.continue/config.json"
+su -l "${_REMOTE_USER}" -c "curl -L https://raw.githubusercontent.com/amerintlxperts/dotfiles/main/.continue/config.json -o ${_REMOTE_USER_HOME}/.continue/config.json"
