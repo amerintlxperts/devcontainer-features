@@ -4,9 +4,9 @@
   "installsAfter": [
     "ghcr.io/rocker-org/devcontainer-features/miniforge",
     "ghcr.io/devcontainers/features/common-utils",
-    "ghcr.io/amerintlxperts/features/update-conda"
+    "ghcr.io/amerintlxperts/devcontainer-features/update-conda"
   ],
   "name": "Jupyter Python Environment",
   "postStartCommand": ". /opt/conda/etc/profile.d/conda.sh && eval $(conda shell.bash hook) >/dev/null 2>&1 && conda activate jupyter && nohup bash -c 'jupyter-lab --port 8888 &' >/tmp/jupyter.tmp",
-  "version": "0.0.8"
+  "version": "0.0.9"
 }

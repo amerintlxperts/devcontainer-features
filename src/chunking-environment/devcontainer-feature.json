@@ -6,8 +6,8 @@
   "id": "chunking-environment",
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
-    "ghcr.io/amerintlxperts/features/update-conda"
+    "ghcr.io/amerintlxperts/devcontainer-features/update-conda"
   ],
   "name": "Chunking Python Environment",
-  "version": "0.0.8"
+  "version": "0.0.9"
 }

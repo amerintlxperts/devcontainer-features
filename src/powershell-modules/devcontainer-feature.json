@@ -1,6 +1,6 @@
 {
   "dependsOn": {
-    "ghcr.io/amerintlxperts/features/powershell": {}
+    "ghcr.io/amerintlxperts/devcontainer-features/powershell": {}
   },
   "description": "Install powershell modules",
   "id": "powershell-modules",
@@ -25,5 +25,5 @@
       "type": "string"
     }
   },
-  "version": "0.0.78"
+  "version": "0.0.79"
 }

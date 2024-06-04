@@ -4,9 +4,9 @@
   "installsAfter": [
     "ghcr.io/rocker-org/devcontainer-features/miniforge",
     "ghcr.io/devcontainers/features/common-utils",
-    "ghcr.io/amerintlxperts/features/update-conda"
+    "ghcr.io/amerintlxperts/devcontainer-features/update-conda"
   ],
   "name": "Autogen Python Environment",
   "postStartCommand": ". /opt/conda/etc/profile.d/conda.sh && eval $(conda shell.bash hook) >/dev/null 2>&1 && conda activate autogen && nohup bash -c 'autogenstudio ui --host 0.0.0.0 --appdir /data/autogenstudio --port 8081 &' >/tmp/autogen.tmp",
-  "version": "0.0.7"
+  "version": "0.0.8"
 }
