@@ -7,5 +7,5 @@
     "ghcr.io/amerintlxperts/features/update-conda"
   ],
   "name": "TextGen Python Environment",
-  "version": "0.0.4"
+  "version": "0.0.5"
 }

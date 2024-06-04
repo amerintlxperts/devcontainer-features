@@ -9,5 +9,5 @@
     "ghcr.io/amerintlxperts/features/update-conda"
   ],
   "name": "Chunking Python Environment",
-  "version": "0.0.7"
+  "version": "0.0.8"
 }
