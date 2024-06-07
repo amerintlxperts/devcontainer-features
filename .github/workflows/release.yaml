@@ -52,5 +52,5 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           repository: amerintlxperts/devcontainers
-          event-type: template
+          event-type: features
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
