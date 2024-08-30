@@ -8,5 +8,5 @@
   "documentationURL": "TFLint is a framework and each feature is provided by plugins.",
   "id": "tflint",
   "name": "Terraform Lint",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
