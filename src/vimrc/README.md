@@ -7,7 +7,7 @@ Install vimrc customizations
 
 ```json
 "features": {
-    "ghcr.io/amerintlxperts/devcontainer-features/vimrc:0": {}
+    "ghcr.io/robinmordasiewicz/features/vimrc:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Install vimrc customizations
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/vimrc/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/robinmordasiewicz/features/blob/main/src/vimrc/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

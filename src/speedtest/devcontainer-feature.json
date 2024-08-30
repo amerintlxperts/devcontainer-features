@@ -2,8 +2,8 @@
   "dependsOn": {
     "ghcr.io/devcontainers-contrib/features/curl-apt-get": {}
   },
-  "description": "Infrastructure Cost",
-  "id": "infracost",
-  "name": "infracost",
+  "description": "Ookla speedtest",
+  "id": "speedtest",
+  "name": "speedtest",
   "version": "0.0.1"
 }

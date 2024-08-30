@@ -4,8 +4,8 @@
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
     "ghcr.io/rocker-org/devcontainer-features/miniforge",
-    "ghcr.io/amerintlxperts/devcontainer-features/update-conda"
+    "ghcr.io/robinmordasiewicz/features/update-conda"
   ],
   "name": "TextGen Python Environment",
-  "version": "0.0.6"
+  "version": "0.0.3"
 }
