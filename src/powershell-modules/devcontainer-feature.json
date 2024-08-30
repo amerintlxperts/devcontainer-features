@@ -1,6 +1,6 @@
 {
   "dependsOn": {
-    "ghcr.io/robinmordasiewicz/features/powershell": {}
+    "ghcr.io/amerintlxperts/devcontainer-features/powershell": {}
   },
   "description": "Install powershell modules",
   "id": "powershell-modules",

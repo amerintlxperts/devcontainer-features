@@ -19,7 +19,7 @@
     }
   },
   "installsAfter": [
-    "ghcr.io/robinmordasiewicz/features/mkdocs-environment"
+    "ghcr.io/amerintlxperts/devcontainer-features/mkdocs-environment"
   ],
   "version": "0.0.4"
 }

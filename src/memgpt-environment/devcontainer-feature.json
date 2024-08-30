@@ -21,7 +21,7 @@
   "id": "memgpt-environment",
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
-    "ghcr.io/robinmordasiewicz/features/update-conda",
+    "ghcr.io/amerintlxperts/devcontainer-features/update-conda",
     "ghcr.io/itsmechlark/features/postgresql",
     "ghcr.io/rocker-org/devcontainer-features/miniforge"
   ],

@@ -6,11 +6,11 @@
   },
   "dependsOn": {
     "ghcr.io/devcontainers-contrib/features/curl-apt-get": {},
-    "ghcr.io/robinmordasiewicz/features/lsd": {},
-    "ghcr.io/robinmordasiewicz/features/nerd-fonts": {},
-    "ghcr.io/robinmordasiewicz/features/oh-my-posh": {},
-    "ghcr.io/robinmordasiewicz/features/tfenv": {},
-    "ghcr.io/robinmordasiewicz/features/update-conda": {}
+    "ghcr.io/amerintlxperts/devcontainer-features/lsd": {},
+    "ghcr.io/amerintlxperts/devcontainer-features/nerd-fonts": {},
+    "ghcr.io/amerintlxperts/devcontainer-features/oh-my-posh": {},
+    "ghcr.io/amerintlxperts/devcontainer-features/tfenv": {},
+    "ghcr.io/amerintlxperts/devcontainer-features/update-conda": {}
   },
   "description": "Install shell shell rc files into container.",
   "id": "container-dotfiles",
