@@ -7,7 +7,7 @@ Install ollama client
 
 ```json
 "features": {
-    "ghcr.io/amerintxperts/devcontainer-features/ollama-client:0": {}
+    "ghcr.io/amerintlxperts/devcontainer-features/ollama-client:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Install ollama client
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintxperts/devcontainer-features/blob/main/src/ollama-client/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/ollama-client/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
