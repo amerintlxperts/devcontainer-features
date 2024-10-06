@@ -7,7 +7,7 @@ Avoid extra logins from the Azure CLI by preserving the `~/.azure` folder across
 
 ```json
 "features": {
-    "ghcr.io/amerintxperts/devcontainer-features/azure-cli-persistence:0": {}
+    "ghcr.io/amerintlxperts/devcontainer-features/azure-cli-persistence:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Avoid extra logins from the Azure CLI by preserving the `~/.azure` folder across
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintxperts/devcontainer-features/blob/main/src/azure-cli-persistence/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/azure-cli-persistence/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
