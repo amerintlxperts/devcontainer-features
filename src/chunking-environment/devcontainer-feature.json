@@ -1,13 +1,12 @@
 {
   "dependsOn": {
-    "ghcr.io/rocker-org/devcontainer-features/miniforge": {}
+    "ghcr.io/devcontainers/features/anaconda": {}
   },
   "description": "Create the python environment for chunking",
   "id": "chunking-environment",
   "installsAfter": [
-    "ghcr.io/devcontainers/features/common-utils",
-    "ghcr.io/amerintlxperts/devcontainer-features/update-conda"
+    "ghcr.io/devcontainers/features/common-utils"
   ],
   "name": "Chunking Python Environment",
-  "version": "0.0.7"
+  "version": "0.0.8"
 }

@@ -7,7 +7,7 @@ Installs shared libraries for NVIDIA CUDA.
 
 ```json
 "features": {
-    "ghcr.io/amerintlxperts/devcontainer-features/nvidia-cuda:0": {}
+    "ghcr.io/amerintxperts/devcontainer-features/nvidia-cuda:0": {}
 }
 ```
 
@@ -15,13 +15,13 @@ Installs shared libraries for NVIDIA CUDA.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| cudaVersion | Version of CUDA to install | string | 12.5 |
+| cudaVersion | Version of CUDA to install | string | 12.6 |
 | cudnnVersion | Version of cuDNN to install | string | 9.2.1 |
+| driverVersion | Version of driver to install | string | 550 |
 | installCudnn | Additionally install CUDA Deep Neural Network (cuDNN) shared library | boolean | false |
 | installCudnnDev | Additionally install CUDA Deep Neural Network (cuDNN) development libraries and headers | boolean | false |
 | installNvtx | Additionally install NVIDIA Tools Extension (NVTX) | boolean | false |
 | installToolkit | Additionally install NVIDIA CUDA Toolkit | boolean | false |
-| driverVersion | Version of driver to install | string | 555 |
 
 ## Compatibility
 
@@ -58,4 +58,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/nvidia-cuda/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintxperts/devcontainer-features/blob/main/src/nvidia-cuda/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

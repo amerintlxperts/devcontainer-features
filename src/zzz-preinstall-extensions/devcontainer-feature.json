@@ -4,6 +4,9 @@
   },
   "description": "Preinstall VSCode Extensions",
   "id": "zzz-preinstall-extensions",
+  "installsAfter": [
+    "ghcr.io/robinmordasiewicz/features/mkdocs-environment"
+  ],
   "name": "Preinstall Extensions",
   "options": {
     "extensions": {
@@ -18,8 +21,5 @@
       "type": "string"
     }
   },
-  "installsAfter": [
-    "ghcr.io/amerintlxperts/devcontainer-features/mkdocs-environment"
-  ],
-  "version": "0.0.5"
+  "version": "0.0.4"
 }

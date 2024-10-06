@@ -7,7 +7,7 @@ Install yq
 
 ```json
 "features": {
-    "ghcr.io/amerintlxperts/devcontainer-features/yq:0": {}
+    "ghcr.io/amerintxperts/devcontainer-features/yq:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Install yq
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/yq/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintxperts/devcontainer-features/blob/main/src/yq/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

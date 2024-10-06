@@ -7,7 +7,7 @@ Find and fix all types of application security issues within your DevOps CI/CD c
 
 ```json
 "features": {
-    "ghcr.io/amerintlxperts/devcontainer-features/fortidevsec:23": {}
+    "ghcr.io/amerintxperts/devcontainer-features/fortidevsec:23": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Find and fix all types of application security issues within your DevOps CI/CD c
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/fortidevsec/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintxperts/devcontainer-features/blob/main/src/fortidevsec/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

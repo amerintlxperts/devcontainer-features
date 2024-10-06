@@ -7,7 +7,7 @@ Install lsd - ls (Deluxe)
 
 ```json
 "features": {
-    "ghcr.io/amerintlxperts/devcontainer-features/lsd:0": {}
+    "ghcr.io/amerintxperts/devcontainer-features/lsd:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Install lsd - ls (Deluxe)
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/lsd/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintxperts/devcontainer-features/blob/main/src/lsd/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

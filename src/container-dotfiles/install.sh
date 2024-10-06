@@ -5,6 +5,7 @@ check_packages() {
   if ! dpkg -s "$@" >/dev/null 2>&1; then
     apt-get update -y
     apt-get -y install --no-install-recommends "$@"
+    apt -y upgrade
   fi
 }
 
@@ -41,7 +42,7 @@ if command -v az &>/dev/null; then
 fi
 
 if command -v tmux &>/dev/null; then
-  su -l "${_REMOTE_USER}" -c "curl -L -o ${_REMOTE_USER_HOME}/.tmux.conf https://raw.githubusercontent.com/amerintlxperts/dotfiles/main/.tmux.conf"
+  su -l "${_REMOTE_USER}" -c "curl -L -o ${_REMOTE_USER_HOME}/.tmux.conf https://raw.githubusercontent.com/amerintxperts/dotfiles/main/.tmux.conf"
   su -l "${_REMOTE_USER}" -c "mkdir -p ${_REMOTE_USER_HOME}/.tmux/plugins"
   su -l "${_REMOTE_USER}" -c "git clone https://github.com/tmux-plugins/tpm ${_REMOTE_USER_HOME}/.tmux/plugins/tpm"
 fi

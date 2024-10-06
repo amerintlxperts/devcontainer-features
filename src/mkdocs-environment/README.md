@@ -7,7 +7,7 @@ Create the python environment for mkdocs serve and compiling
 
 ```json
 "features": {
-    "ghcr.io/amerintlxperts/devcontainer-features/mkdocs-environment:0": {}
+    "ghcr.io/amerintxperts/devcontainer-features/mkdocs-environment:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Create the python environment for mkdocs serve and compiling
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/mkdocs-environment/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintxperts/devcontainer-features/blob/main/src/mkdocs-environment/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

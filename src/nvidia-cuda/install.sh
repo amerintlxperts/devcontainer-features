@@ -4,6 +4,9 @@
 set -e
 [ "$(uname -m)" = "x86_64" ] || exit 0
 
+cp nvidia-pin /etc/apt/preferences.d/
+apt update
+
 # Clean up
 rm -rf /var/lib/apt/lists/*
 
@@ -107,7 +110,7 @@ if [ "$DRIVER_VERSION" != "false" ]; then
   driver_pkg_version="nvidia-driver-${DRIVER_VERSION}"
   apt-cache show nvidia-driver-555
   apt-cache show nvidia-driver-550
-  if ! apt-cache show "driver_pkg_version" > /dev/null 2>&1; then
+  if ! apt-cache show "driver_pkg_version" >/dev/null 2>&1; then
     echo "The requested version of driver package is not available: nvidia-driver-${DRIVER_VERSION}"
     #exit 1
   fi
@@ -115,6 +118,8 @@ if [ "$DRIVER_VERSION" != "false" ]; then
   echo "Installing drivers nvidia-driver-${DRIVER_VERSION}"
   apt-get install -yq "$driver_pkg_version"
 fi
+
+apt-get install -yq nvidia-driver-550-server
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
