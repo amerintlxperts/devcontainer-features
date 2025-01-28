@@ -1,13 +1,13 @@
 
-# ls Deluxe (lazygit)
+# laceworks-cli (laceworks-cli)
 
-ls deluxe (lsd) adds fancy color output, replacing legacy ls
+Laceworks command line interface
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/amerintlxperts/devcontainer-features/lazygit:0": {}
+    "ghcr.io/amerintlxperts/devcontainer-features/laceworks-cli:0": {}
 }
 ```
 
@@ -17,4 +17,4 @@ ls deluxe (lsd) adds fancy color output, replacing legacy ls
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/lazygit/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/amerintlxperts/devcontainer-features/blob/main/src/laceworks-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
