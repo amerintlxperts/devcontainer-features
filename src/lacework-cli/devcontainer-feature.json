@@ -2,9 +2,9 @@
   "dependsOn": {
     "ghcr.io/devcontainers-contrib/features/curl-apt-get": {}
   },
-  "description": "Laceworks command line interface",
+  "description": "Lacework command line interface",
   "documentationURL": "https://docs.lacework.net/cli/",
-  "id": "laceworks-cli",
-  "name": "laceworks-cli",
-  "version": "0.0.1"
+  "id": "lacework-cli",
+  "name": "lacework-cli",
+  "version": "0.0.2"
 }
