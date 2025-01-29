@@ -3,7 +3,7 @@
     "ghcr.io/devcontainers-contrib/features/curl-apt-get": {}
   },
   "description": "A project to abstract the gathering, transformations, and rendering of datasets from Lacework into auto-generated reports.",
-  "id": "lw_report_gen",
+  "id": "lacework-extensible-reporting",
   "name": "Lacework Extensible Report Generator",
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
