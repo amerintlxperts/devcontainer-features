@@ -6,7 +6,7 @@ on:
 jobs:
   deploy:
     if: ${{ github.ref == 'refs/heads/main' }}
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
