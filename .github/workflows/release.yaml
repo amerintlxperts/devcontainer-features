@@ -22,7 +22,7 @@ jobs:
           publish-features: true
           base-path-to-features: "./src"
           generate-docs: true
-          publish-templates: true
+          publish-templates: false
 
       - name: Create PR for Documentation
         id: push_image_info
