@@ -6,5 +6,6 @@
   "documentationURL": "https://docs.lacework.net/cli/",
   "id": "lacework-cli",
   "name": "lacework-cli",
-  "version": "0.0.2"
+  "postCreateCommand": "lacework completion > ${_REMOTE_USER_HOME}/.oh-my-zsh/completions/_lacework",
+  "version": "0.0.3"
 }
