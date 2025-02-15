@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-curl https://raw.githubusercontent.com/lacework/go-sdk/main/cli/install.sh | bash -s -- 
+curl https://raw.githubusercontent.com/lacework/go-sdk/main/cli/install.sh | bash -s --
 
 USERNAME="${USERNAME:-${_REMOTE_USER}}"
 FEATURE_ID="lacework-cli"
@@ -41,6 +41,7 @@ create_symlink_dir() {
 }
 
 create_cache_dir "/dc/lacework-cli" "${USERNAME}"
-create_symlink_dir "${_REMOTE_USER_HOME}/.lacework.toml" "/dc/lacework-cli" "${USERNAME}"
+touch "/dc/lacework-cli/.lacework.toml"
+create_symlink_dir "${_REMOTE_USER_HOME}/.lacework.toml" "/dc/lacework-cli/.lacework.toml" "${USERNAME}"
 
 echo "Finished installing ${FEATURE_ID}"
