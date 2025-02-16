@@ -1,7 +1,10 @@
 {
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/java": {}
+  },
   "description": "Installs the BFG Repo-Cleaner, a tool for cleaning Git repositories.",
   "id": "git-bfg-cleaner",
   "name": "Git BFG Cleaner",
   "options": {},
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
