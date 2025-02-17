@@ -14,34 +14,39 @@ create_cache_dir() {
     mkdir -p "${1}"
   fi
 
-  if [ -z "${2}" ]; then
-    echo "No username provided. Skip chown..."
-  else
+  if [ -n "${2}" ]; then
     echo "Change owner of ${1} to ${2}..."
     chown -R "${2}:${2}" "${1}"
+  else
+    echo "No username provided. Skip chown..."
   fi
 }
 
-create_symlink_dir() {
-  local local_dir="${1}"
-  local cache_dir="${2}"
+create_symlink_file() {
+  local local_file="${1}"
+  local cache_file="${2}"
   local username="${3}"
 
-  runuser -u "${username}" -- mkdir -p "$(dirname "${local_dir}")"
-  runuser -u "${username}" -- mkdir -p "${cache_dir}"
+  # Ensure the parent directory for the symlink exists.
+  runuser -u "${username}" -- mkdir -p "$(dirname "${local_file}")"
 
-  # if the folder we want to symlink already exists, the ln -s command will create a folder inside the existing folder
-  if [ -e "${local_dir}" ]; then
-    echo "Moving existing ${local_dir} folder to ${local_dir}-old"
-    mv "${local_dir}" "${local_dir}-old"
+  # If a file (or symlink) already exists, move it aside.
+  if [ -e "${local_file}" ]; then
+    echo "Moving existing ${local_file} to ${local_file}-old"
+    mv "${local_file}" "${local_file}-old"
   fi
 
-  echo "Symlink ${local_dir} to ${cache_dir} for ${username}..."
-  runuser -u "${username}" -- ln -s "${cache_dir}" "${local_dir}"
+  echo "Symlink ${local_file} to ${cache_file} for ${username}..."
+  runuser -u "${username}" -- ln -s "${cache_file}" "${local_file}"
 }
 
+# Create cache directory for Lacework CLI configuration.
 create_cache_dir "/dc/lacework-cli" "${USERNAME}"
+
+# Create the file that will serve as the target of the symlink.
 touch "/dc/lacework-cli/.lacework.toml"
-create_symlink_dir "${_REMOTE_USER_HOME}/.lacework.toml" "/dc/lacework-cli/.lacework.toml" "${USERNAME}"
+
+# Create the symlink from the user's home (where the CLI expects the file) to the cache file.
+create_symlink_file "${_REMOTE_USER_HOME}/.lacework.toml" "/dc/lacework-cli/.lacework.toml" "${USERNAME}"
 
 echo "Finished installing ${FEATURE_ID}"
