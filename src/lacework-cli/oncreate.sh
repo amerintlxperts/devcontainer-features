@@ -1,28 +1,31 @@
 #!/usr/bin/env bash
-
 set -e
 
 TARGET="/dc/lacework-cli"
 
-# if the user is not root, chown /dc/lacework-cli to the user
-if [ "$(id -u)" != "0" ]; then
-  echo "Running oncreate.sh for user ${USER}"
-  sudo chown -R "${USER}:${USER}" /dc/lacework-cli
+# Ensure the oh-my-zsh completions directory exists
+if [ ! -d "${HOME}/.oh-my-zsh/completions" ]; then
+  mkdir -p "${HOME}/.oh-my-zsh/completions"
 fi
 
-lacework completion zsh >${HOME}/.oh-my-zsh/completions/_lacework
+# Generate zsh completion for lacework and save it
+lacework completion zsh >"${HOME}/.oh-my-zsh/completions/_lacework"
 
-if [ -f ${HOME}/.lacework.toml ]; then
-  mv ${HOME}/.lacework.toml /dc/lacework-cli/.lacework.toml
+# If a .lacework.toml file exists in the home directory, move it; otherwise, create an empty one
+if [ -f "${HOME}/.lacework.toml" ]; then
+  mv "${HOME}/.lacework.toml" "${TARGET}/.lacework.toml"
 else
-  touch /dc/lacework-cli/.lacework.toml
+  touch "${TARGET}/.lacework.toml"
 fi
 
-ln -sf /dc/lacework-cli/.lacework.toml ${HOME}/.lacework.toml
+# Create a symlink from the target .lacework.toml to the home directory
+ln -sf "${TARGET}/.lacework.toml" "${HOME}/.lacework.toml"
 
+# Function to create a symlink for a given directory.
 create_symlink() {
-  LINK="${1}"
+  local LINK="${1}"
 
+  # Ensure the parent directory exists
   if [ ! -d "$(dirname "$LINK")" ]; then
     mkdir -p "$(dirname "$LINK")"
   fi
@@ -35,31 +38,28 @@ create_symlink() {
       else
         echo "Symlink exists but points to $current_target. Recreating symlink..."
         rm "$LINK"
-        ln -sd "$TARGET" "$LINK"
+        ln -s "$TARGET" "$LINK"
       fi
     elif [ -d "$LINK" ]; then
       echo "$LINK exists as a directory. Moving its contents to $TARGET and replacing it with a symlink..."
-
       if [ ! -d "$TARGET" ]; then
         mkdir -p "$TARGET"
         echo "Created target directory: $TARGET"
       fi
-
       shopt -s dotglob
       if [ "$(ls -A "$LINK")" ]; then
         mv "$LINK"/* "$TARGET"/ 2>/dev/null
       fi
       shopt -u dotglob
-
       rm -rf "$LINK"
-      ln -sd "$TARGET" "$LINK"
+      ln -s "$TARGET" "$LINK"
     else
       echo "$LINK exists but is neither a symlink nor a directory. Please remove it manually and re-run the script."
       exit 1
     fi
   else
     echo "$LINK does not exist. Creating symlink..."
-    ln -sd "$TARGET" "$LINK"
+    ln -s "$TARGET" "$LINK"
   fi
 }
 
