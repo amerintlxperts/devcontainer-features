@@ -17,3 +17,19 @@ else
 fi
 
 ln -sf /dc/lacework-cli/.lacework.toml ${HOME}/.lacework.toml
+
+# Run the "lacework account list" command and capture both stdout and stderr
+output=$(lacework account list 2>&1)
+
+# Check if the output contains the word "ERROR"
+if echo "$output" | grep -q "ERROR"; then
+  # If "ERROR" is found, exit with status 0
+  exit 0
+else
+  lacework component install chronicle-alert-channel --nocolor --noninteractive
+  lacework component install component-example --nocolor --noninteractive
+  lacework component install iac --nocolor --noninteractive
+  lacework component install preflight --nocolor --noninteractive
+  lacework component install remediate --nocolor --noninteractive
+  lacework component install sca --nocolor --noninteractive
+fi

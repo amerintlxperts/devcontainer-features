@@ -16,5 +16,5 @@
   "onCreateCommand": {
     "lacework-cli-persistence-setup": "/usr/local/share/lacework-cli/scripts/oncreate.sh"
   },
-  "version": "0.0.12"
+  "version": "0.0.13"
 }
