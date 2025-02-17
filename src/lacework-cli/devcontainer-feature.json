@@ -14,8 +14,8 @@
   ],
   "name": "lacework-cli",
   "onCreateCommand": {
-    "lacework-cli-persistence-setup": "/usr/local/share/lacework-cli-persistence/scripts/oncreate.sh"
+    "lacework-cli-persistence-setup": "/usr/local/share/lacework-cli/scripts/oncreate.sh"
   },
   "postCreateCommand": "zsh -c 'lacework completion zsh > ${HOME}/.oh-my-zsh/completions/_lacework && omz reload && if [ -f ${HOME}/.lacework.toml ]; then mv ${HOME}/.lacework.toml /dc/lacework-cli/.lacework.toml; else touch /dc/lacework-cli/.lacework.toml; fi && ln -sf /dc/lacework-cli/.lacework.toml ${HOME}/.lacework.toml'",
-  "version": "0.0.10"
+  "version": "0.0.11"
 }
