@@ -46,7 +46,4 @@ create_cache_dir "/dc/lacework-cli" "${USERNAME}"
 # Create the file that will serve as the target of the symlink.
 touch "/dc/lacework-cli/.lacework.toml"
 
-# Create the symlink from the user's home (where the CLI expects the file) to the cache file.
-create_symlink_file "${_REMOTE_USER_HOME}/.lacework.toml" "/dc/lacework-cli/.lacework.toml" "${USERNAME}"
-
 echo "Finished installing ${FEATURE_ID}"
