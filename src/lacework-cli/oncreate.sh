@@ -12,11 +12,19 @@ fi
 lacework completion zsh >"${HOME}/.oh-my-zsh/completions/_lacework"
 
 # If a .lacework.toml file exists in the home directory, move it; otherwise, create an empty one
-if [ -f "${HOME}/.lacework.toml" ]; then
+if [ -L "${HOME}/.lacework.toml" ]; then
+  toml_link=$(readlink "${HOME}/.lacework.toml")
+  if [ "$toml_link" = "$TARGET/.lacework.toml" ]; then
+    echo "Symlink already exists and points to the correct target: $TARGET/.lacework.toml"
+  else
+    echo "Symlink exists but points to $toml_link. Recreating symlink..."
+    rm "${HOME}/.lacework.toml"
+    ln -s "${TARGET}/.lacework.toml" "${HOME}/.lacework.toml"
+  fi
+elif [ -f "${HOME}/.lacework.toml" ]; then
   mv "${HOME}/.lacework.toml" "${TARGET}/.lacework.toml"
-else
-  touch "${TARGET}/.lacework.toml"
 fi
+touch "${TARGET}/.lacework.toml"
 
 # Create a symlink from the target .lacework.toml to the home directory
 ln -sf "${TARGET}/.lacework.toml" "${HOME}/.lacework.toml"
@@ -48,7 +56,7 @@ create_symlink() {
       fi
       shopt -s dotglob
       if [ "$(ls -A "$LINK")" ]; then
-        mv "$LINK"/* "$TARGET"/ 2>/dev/null
+        mv "$LINK"/* "$TARGET"/
       fi
       shopt -u dotglob
       rm -rf "$LINK"
