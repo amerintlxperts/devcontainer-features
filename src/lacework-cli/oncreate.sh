@@ -34,8 +34,8 @@ create_symlink() {
   local LINK="${1}"
 
   # Ensure the parent directory exists
-  if [ ! -d "$(dirname "$LINK")" ]; then
-    mkdir -p "$(dirname "$LINK")"
+  if [ ! -d "$(dirname $LINK)" ]; then
+    mkdir -p "$(dirname $LINK)"
   fi
 
   if [ -e "$LINK" ]; then
@@ -45,8 +45,7 @@ create_symlink() {
         echo "Symlink already exists and points to the correct target: $TARGET"
       else
         echo "Symlink exists but points to $current_target. Recreating symlink..."
-        rm "$LINK"
-        ln -s "$TARGET" "$LINK"
+        rm -rf "$LINK" && ln -sf "$TARGET" "$LINK"
       fi
     elif [ -d "$LINK" ]; then
       echo "$LINK exists as a directory. Copying its contents to $TARGET and replacing it with a symlink..."
@@ -55,15 +54,12 @@ create_symlink() {
         echo "Created target directory: $TARGET"
       fi
       shopt -s dotglob
-      if [ "$(ls -A "$LINK")" ]; then
-        cp -a "$LINK"/. "$TARGET"/
+      if [ "$(ls -A $LINK)" ]; then
+        cp -a "${LINK}/*" "${TARGET}/" && rm -rf "${LINK}" && ln -sf "${TARGET}" "${LINK}"
       fi
       shopt -u dotglob
-      rm -rf "$LINK"
-      ln -s "$TARGET" "$LINK"
     else
       echo "$LINK exists but is neither a symlink nor a directory. Please remove it manually and re-run the script."
-      exit 1
     fi
   else
     echo "$LINK does not exist. Creating symlink..."
