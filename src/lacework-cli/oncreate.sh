@@ -55,7 +55,7 @@ create_symlink() {
       fi
       shopt -s dotglob
       if [ "$(ls -A $LINK)" ]; then
-        cp -a "${LINK}/*" "${TARGET}/" && rm -rf "${LINK}" && ln -sf "${TARGET}" "${LINK}"
+        cp -a ${LINK}/* ${TARGET} && rm -rf "${LINK}" && ln -sf "${TARGET}" "${LINK}"
       fi
       shopt -u dotglob
     else
