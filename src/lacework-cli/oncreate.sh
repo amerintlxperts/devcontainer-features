@@ -49,14 +49,14 @@ create_symlink() {
         ln -s "$TARGET" "$LINK"
       fi
     elif [ -d "$LINK" ]; then
-      echo "$LINK exists as a directory. Moving its contents to $TARGET and replacing it with a symlink..."
+      echo "$LINK exists as a directory. Copying its contents to $TARGET and replacing it with a symlink..."
       if [ ! -d "$TARGET" ]; then
         mkdir -p "$TARGET"
         echo "Created target directory: $TARGET"
       fi
       shopt -s dotglob
       if [ "$(ls -A "$LINK")" ]; then
-        mv "$LINK"/* "$TARGET"/
+        cp -a "$LINK"/. "$TARGET"/
       fi
       shopt -u dotglob
       rm -rf "$LINK"
