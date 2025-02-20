@@ -80,7 +80,6 @@ if echo "$output" | grep -q "ERROR"; then
 else
   lacework component install chronicle-alert-channel --nocolor --noninteractive
   lacework component install component-example --nocolor --noninteractive
-  lacework component install iac --nocolor --noninteractive
   lacework component install preflight --nocolor --noninteractive
   lacework component install remediate --nocolor --noninteractive
   lacework component install sca --nocolor --noninteractive
