@@ -83,4 +83,5 @@ else
   lacework component install preflight --nocolor --noninteractive
   lacework component install remediate --nocolor --noninteractive
   lacework component install sca --nocolor --noninteractive
+  lacework component install vuln-scanner --nocolor --noninteractive
 fi
