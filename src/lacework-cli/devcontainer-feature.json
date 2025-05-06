@@ -2,8 +2,8 @@
   "dependsOn": {
     "ghcr.io/devcontainers-contrib/features/curl-apt-get": {}
   },
-  "description": "Lacework command line interface",
-  "documentationURL": "https://docs.lacework.net/cli/",
+  "description": "FortiCNAPP command line interface",
+  "documentationURL": "https://docs.fortinet.com/document/lacework-forticnapp/latest/cli-reference/68020/get-started-with-the-lacework-forticnapp-cli",
   "id": "lacework-cli",
   "mounts": [
     {
@@ -16,5 +16,5 @@
   "onCreateCommand": {
     "lacework-cli-persistence-setup": "/usr/local/share/lacework-cli/scripts/oncreate.sh"
   },
-  "version": "0.0.21"
+  "version": "0.0.22"
 }

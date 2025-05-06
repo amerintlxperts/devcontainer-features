@@ -24,7 +24,8 @@ if [ -L "${HOME}/.lacework.toml" ]; then
 elif [ -f "${HOME}/.lacework.toml" ]; then
   mv "${HOME}/.lacework.toml" "${TARGET}/.lacework.toml"
 fi
-touch "${TARGET}/.lacework.toml"
+
+# touch "${TARGET}/.lacework.toml"
 
 # Create a symlink from the target .lacework.toml to the home directory
 ln -sf "${TARGET}/.lacework.toml" "${HOME}/.lacework.toml"
