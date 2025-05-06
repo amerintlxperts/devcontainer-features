@@ -3,10 +3,7 @@
     "ghcr.io/devcontainers-contrib/features/curl-apt-get": {}
   },
   "description": "Preinstall VSCode Extensions",
-  "id": "zzz-preinstall-extensions",
-  "installsAfter": [
-    "ghcr.io/robinmordasiewicz/features/mkdocs-environment"
-  ],
+  "id": "preinstall-extensions",
   "name": "Preinstall Extensions",
   "options": {
     "extensions": {
@@ -21,5 +18,5 @@
       "type": "string"
     }
   },
-  "version": "0.0.4"
+  "version": "0.0.5"
 }
