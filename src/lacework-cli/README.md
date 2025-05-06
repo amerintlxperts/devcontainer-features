@@ -1,7 +1,7 @@
 
 # lacework-cli (lacework-cli)
 
-Lacework command line interface
+FortiCNAPP command line interface
 
 ## Example Usage
 
