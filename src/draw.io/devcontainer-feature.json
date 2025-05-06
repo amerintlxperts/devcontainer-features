@@ -17,7 +17,7 @@
       ]
     },
     "ghcr.io/devcontainers-contrib/features/curl-apt-get": {},
-    "ghcr.io/robinmordasiewicz/features/zzz-preinstall-extensions": {
+    "ghcr.io/amerintlxperts/features/preinstall-extensions": {
       "extensions": [
         "hediet.vscode-drawio"
       ]
@@ -26,5 +26,5 @@
   "description": "draw.io",
   "id": "draw.io",
   "name": "draw.io",
-  "version": "0.0.6"
+  "version": "0.0.7"
 }
