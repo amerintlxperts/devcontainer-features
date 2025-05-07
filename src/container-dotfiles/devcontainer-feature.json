@@ -14,5 +14,5 @@
   "description": "Install shell shell rc files into container.",
   "id": "container-dotfiles",
   "name": "Container Dotfiles",
-  "version": "0.0.78"
+  "version": "0.0.79"
 }

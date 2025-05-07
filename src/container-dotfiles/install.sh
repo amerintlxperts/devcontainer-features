@@ -11,7 +11,7 @@ check_packages() {
 
 export DEBIAN_FRONTEND=noninteractive
 
-check_packages locales locales-all
+# check_packages locales locales-all
 
 su -l "${_REMOTE_USER}" -c "echo '+nostats +nocomments +nocmd +noquestion +recurse +search' > ${_REMOTE_USER_HOME}/.digrc"
 
