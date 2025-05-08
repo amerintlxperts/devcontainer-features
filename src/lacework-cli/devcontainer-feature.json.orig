@@ -13,5 +13,8 @@
     }
   ],
   "name": "lacework-cli",
-  "version": "0.0.25"
+  "onCreateCommand": {
+    "lacework-cli-persistence-setup": "/usr/local/share/lacework-cli/scripts/oncreate.sh"
+  },
+  "version": "0.0.24"
 }
