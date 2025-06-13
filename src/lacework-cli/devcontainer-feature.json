@@ -1,6 +1,6 @@
 {
   "dependsOn": {
-    "ghcr.io/devcontainers-contrib/features/curl-apt-get": {}
+    "ghcr.io/devcontainers-extra/features/curl-apt-get": {}
   },
   "description": "FortiCNAPP command line interface",
   "documentationURL": "https://docs.fortinet.com/document/lacework-forticnapp/latest/cli-reference/68020/get-started-with-the-lacework-forticnapp-cli",
@@ -13,5 +13,5 @@
     }
   ],
   "name": "lacework-cli",
-  "version": "0.0.25"
+  "version": "0.0.26"
 }
